@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 2</title>
+    <style>
+        .holder {
+          margin: 20px 0;
+        }
+
+        .holder label {
+            font-size: 20px;
+            margin-right: 16px;
+        }
+
+        .holder input {
+            outline: none;
+            width: 100px;
+            height: 20px;
+        }
+
+        #result {
+            display: block;
+            margin-bottom: 20px;
+            border: 1px solid #000;
+            border-radius: 4px;
+            background-color: black;
+            color: #fff;
+            font-size: 20px;
+            padding: 12px;
+            cursor: pointer;
+        }
+
+    </style>
+
+</head>
+<body>
+        <h1>Giải phương trình bậc 2</h1>
+        <div class="holder">
+            <label>Nhập a</label>
+            <input type="number" name="input A" id="inputA">
+        </div>
+
+        <div class="holder">
+            <label>Nhập b</label>
+            <input type="number" name="input B" id="inputB">
+        </div>
+
+        <div class="holder">
+            <label>Nhập c</label>
+            <input type="number" name="input B" id="inputC">
+        </div>
+
+        <button id="result" onclick="solve()">Kết quả</button>
+
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

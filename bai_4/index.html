@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 4</title>
+
+    <style>
+        textarea, input, button {
+            display: block;
+            margin: 16px 0;
+            padding: 8px;
+            outline: none;
+        }
+
+        textarea {
+            width: 400px;
+            height: 200px;
+            resize: none;
+        }
+
+        input {
+            width: 400px;
+            height: 30px;
+        }
+
+        button {
+            width: 100px;
+            height: 30px;
+            cursor: pointer;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <h1>Tính toán số lần xuất hiện của dòng nội dung trong đoạn văn bản</h1>
+
+    <textarea id="ta" placeholder="Nhập vào đoạn văn bản"></textarea>
+
+    <input type="text" id="tf" placeholder="Nhập vào một dòng nội dung">
+
+    <button id="btn" onclick="count()">Kết Quả</button>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
