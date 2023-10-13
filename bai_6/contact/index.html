@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Contact Form</title>
+</head>
+<body>
+    <div id="container">
+        <div id="contact_form">
+            <div class="title">
+                <p>Contact Us</p>
+            </div>
+
+            <form class="form_input" id="form">
+                <div class="holder">
+                    <label>FULL NAME * </label>
+                    <input type="text" id="fullname" placeholder="Enter Your Name" onblur="NAME()">
+                    <div class="boxCheck" id="nameBoxCheck">
+                        <p id="checkName"></p>
+                    </div>
+                </div>
+                <div class="second_input">
+                    <div class="holder">
+                        <label>EMAIL *</label>
+                        <input type="email" id="email" placeholder="Enter Your Email" onblur="EMAIL()">
+                        <span class="inputText" id="emailText"></span>
+                        <div class="boxCheck" id="emailBoxCheck">
+                            <p id="checkEmail"></p>
+                        </div>
+                    </div>
+                    <div class="holder">
+                        <label>PHONE</label>
+                        <input type="tele" id="phone" placeholder="Enter Number Phone" onblur="PHONE()">
+                        <span class="inputText" id="phoneText"></span>
+                        <div class="boxCheck" id="phoneBoxCheck">
+                            <p id="checkPhone"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="holder">
+                    <label>NEEDED SERVICES *</label>
+                    <div class="combobox">
+                        <select name = "Choose">
+                            <option>Please chooses</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="holder message">
+                    <label>MESSAGE</label>
+                    <textarea id="message" placeholder="Your message here..."></textarea>
+                </div>
+                <div class="submit-btn">
+                    <input type="submit" value="Submit" id="submit">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+</html>

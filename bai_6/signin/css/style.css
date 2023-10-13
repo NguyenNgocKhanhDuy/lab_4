@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+#container {
+    width: 440px;
+    height: 320px;
+    margin: 0 auto;
+    background: url("../images/bg.jpg") no-repeat center/cover;
+    padding: 22px;
+}
+
+#sign-in {
+    width: 156px;
+    height: 280px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 32px 20px 12px;
+    border-radius: 4px;
+    position: relative;
+}
+
+
+
+#sign-in .title p {
+    text-align: center;
+    font-size: 10px;
+    font-weight: 600;
+    color: #481a52;
+    margin: 0;
+}
+
+#sign-in form {
+    margin-top: 24px;
+    margin-bottom: 26px;
+    text-align: center;
+    position: relative;
+}
+
+#sign-in form input {
+    width: 100%;
+    height: 26px;
+    padding: 11px 8px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 10px #ddd;
+    margin-bottom: 8px;
+    cursor: pointer;
+    font-size: 7px;
+}
+
+#sign-in form input::placeholder {
+    font-size: 6px;
+    font-weight: 600;
+    color: #481a52;
+}
+
+#sign-in form .sign-in-btn {
+    width: 64px;
+    height: 18px;
+    background-color: #bd59d7;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    margin-top: 4px;
+    font-size: 6px;
+    font-weight: 600;
+    box-shadow: 0 10px 12px -4px #bd59d7;
+    cursor: pointer;
+}
+#sign-in .social-login {
+    text-align: center;
+}
+
+#sign-in .social-login .text {
+    color: #c8c8c8;
+    font-size: 6px;
+    margin-bottom: 12px;
+}
+
+#sign-in .social-login .social-icon img {
+    width: 18px;
+    height: 18px;
+    padding: 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 2px #ddd;
+    margin: 0 2px;
+    cursor: pointer;
+}
+
+#sign-in .sign-up {
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#sign-in .sign-up p {
+    color: #481a52;
+    font-size: 7px;
+    cursor: pointer;
+}
+
+.inputText {
+    position: absolute;
+    top: -3px;
+    left: 0;
+    width: 100%;
+    height: 26px;
+    padding: 11px 8px;
+    font-size: 7px;
+    text-align: left;
+    z-index: -1;
+}
+
+.red {
+    background-color: red;
+    color: #fff;
+}
+
+.boxCheck {
+    height: 30px;
+    min-width: 90px;
+    background: #e6e6e6;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    display: none;
+    font-size: 8px;
+}
+
+#emailBoxCheck {
+    right: 100%;
+    transform: translateX(-15%);
+}
+
+#emailBoxCheck::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: calc(100% - 0.2px);
+    display: block;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 15px solid #e6e6e6;
+    border-right: 10px solid transparent;
+}
+
+#passBoxCheck {
+    left: 100%;
+    transform: translate(15%, 120%);
+}
+
+#passBoxCheck::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: calc(100% - 0.2px);
+    display: block;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-right: 15px solid #e6e6e6;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Sign In Form</title>
+</head>
+<body>
+    <div id="container">
+        <div id="sign-in">
+            <div class="title">
+                <p>Sign In</p>
+            </div>
+
+            <form action="" id="form">
+                <input type="text" name="username" id="username" placeholder="username or email" onblur="EMAIL()">
+                <span class="inputText" id="emailText"></span>
+                <div class="boxCheck" id="emailBoxCheck">
+                    <p id="checkEmail"></p>
+                </div>
+                <input type="password" name="password" id="passsword" placeholder="password" onblur="PASS()">
+                <div class="boxCheck" id="passBoxCheck">
+                    <p id="checkPass"></p>
+                </div>
+                <button type="button" class="sign-in-btn" id="btn-signIn">SIGN IN</button>
+            </form>
+
+            <div class="social-login">
+                <div class="text">
+                    <p>Or login with</p>
+                </div>
+                <div class="social-icon">
+                    <img src="./images/facebook.png" alt="">
+                    <img src="./images/google.png" alt="">
+                </div>
+            </div>
+
+            <div class="sign-up">
+                <p>Sign Up</p>
+            </div>
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Payment Form</title>
+</head>
+<body>
+    <div id="container">
+        <div id="form">
+            <div class="account">
+                <p class="title">Account</p>
+                <form action="">
+                    <div class="holder">
+                        <label><i class="fa-solid fa-user"></i></label>
+                        <input type="text" placeholder="Full Name" id="username" onblur="NAME()">
+                        <div class="boxCheck boxRightSide" id="nameBoxCheck">
+                            <p id="checkName"></p>
+                        </div>
+                    </div>
+
+                    <div class="holder">
+                        <label><i class="fa-solid fa-envelope"></i></label>
+                        <input type="email" placeholder="Email Address" id="email" onblur="EMAIL()">
+                        <span class="inputText" id="emailText"></span>
+                        <div class="boxCheck boxRightSide" id="emailBoxCheck">
+                            <p id="checkEmail"></p>
+                        </div>
+                    </div>
+
+                    <div class="holder">
+                        <label><i class="fa-solid fa-key fa-rotate-270"></i></label>
+                        <input type="password" placeholder="Password" id="pass" onblur="PASS()">
+                        <div class="boxCheck boxRightSide" id="passBoxCheck">
+                            <p id="checkPass"></p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="dob-gender">
+                <div class="dob">
+                    <p class="title">Date of Birth</p>
+                    <div class="dob-input">
+                        <input type="number" placeholder="DD" min="0" id="day" onblur="DOB()">
+                        <span class="inputText dobSpan" id="dayText"></span>
+                        <input type="number" placeholder="MM" min="0" id="month" onblur="DOB()">
+                        <span class="inputText dobSpan" id="monthText"></span>
+                        <input type="number" placeholder="YYYY" min="0" id="year" onblur="DOB()">
+                        <span class="inputText dobSpan" id="yearText"></span>
+                        <div class="boxCheck boxLeftSide" id="dobBoxCheck">
+                            <p id="checkDOB"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gender">
+                    <p class="title">Gender</p>
+                    <div class="gender-select">
+                        <div class="gender-item">
+                            <input type="radio" name="gender" id="male">
+                            <p>Male</p>
+                        </div>
+
+                        <div class="gender-item">
+                            <input type="radio" name="gender" id="female">
+                            <p>Female</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="payment">
+                <p class="title">Payment Details</p>
+                <div class="payment-select">
+                    <div class="payment-type">
+                        <input type="radio" name="payment" id="credit">
+                        <i class="fa-brands fa-cc-visa"></i>
+                        <p>Credit Card</p>
+                    </div>
+                    <div class="payment-type">
+                        <input type="radio" name="payment" id="paypal">
+                        <i class="fa-brands fa-cc-paypal"></i>
+                        <p>Paypal</p>
+                    </div>
+                </div>
+                <form class="card-info">
+                    <div class="holder">
+                        <label><i class="fa-regular fa-credit-card"></i></label>
+                        <input type="number" name="" id="card-number" placeholder="Card Number" min="0" onblur="CARDNUMBER()">
+                        <span class="inputText" id="cnumberText"></span>
+                        <div class="boxCheck boxRightSide" id="cardNumBoxCheck">
+                            <p id="checkCardNum"></p>
+                        </div>
+                    </div>
+
+                    <div class="cvc-date">
+                        <div class="holder cvc-date-item">
+                            <label><i class="fa-solid fa-user"></i></label>
+                            <input type="number" name="" id="card-cvc" placeholder="Card CVC" min="0" onblur="CVC()">
+                            <span class="inputText" id="cvcText"></span>
+                            <div class="boxCheck boxLeftSide" id="cvcBoxCheck">
+                                <p id="checkCVC"></p>
+                            </div>
+                        </div>
+
+                        <div class="holder cvc-date-item">
+                            <select>
+                                <option>01 Jan</option>
+                            </select>
+                            <select class="year">
+                                <option>2015</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+
+            <div class="terms">
+                <p class="title">Terms and Conditions</p>
+                <div class="term-check">
+                    <input type="checkbox" name="" id="">
+                    <label></label>
+                    <p class="sub_text">I accept the terms and conditions for signing up to this service, and hereby confirm I have read the privacy policy</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+</html>
